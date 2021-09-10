@@ -1,13 +1,13 @@
 import React from 'react';
-import { IoSunny } from 'react-icons/io5';
+import { HiSun } from 'react-icons/hi';
 
 function HeaderComponent() {
   return (
-    <header>
-        <h1><a href="#">devfinder</a></h1>
-        <button>
-            <p>Claro</p>
-            <IoSunny color="#fff" />
+    <header className="header">
+        <h1 className="header__title"><a href="#">devfinder</a></h1>
+        <button className="header__themeButton">
+            <p>CLARO</p>
+            <HiSun color="#fff" size={22} />
         </button>
     </header>
     );

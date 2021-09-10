@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    & > .header__title {
+        a {
+            color: $fontColor;
+            text-decoration: none;
+        }
+    }
+
+    & > .header__themeButton {
+        display: flex;
+        align-items: center;
+        border: none;
+        color: $fontColor;
+
+        & > p {
+            margin-right: 20px;
+        }
+    }
+}

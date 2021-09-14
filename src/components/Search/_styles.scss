@@ -1,0 +1,45 @@
+.search {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    background-color: $secondaryColor;
+    border-radius: 10px;
+
+    & > .search__icon {
+        margin-left: 10px;
+    }
+
+    & > .search__form {
+        display: flex;
+        width: 100%;
+
+        & > .search__form__input {
+            width: 100%;
+            border: none;
+            color: $fontColor;
+            font-size: 1rem;
+            background: transparent;
+            outline: none;
+            margin: 0 10px;
+        }
+    
+        & > .search__form__button {
+            border: none;
+            background-color: $foreground;
+            padding: 15px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            outline: none;
+    
+            &:hover {
+                opacity: 0.8;
+                transition: 0.2s
+            }
+    
+            & > .search__form__button__text {
+                color: $fontColor;
+            }
+        }
+    }
+}

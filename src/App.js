@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Search from './components/Search';
+import UserInfo from './components/UserInfo';
 import './app.scss';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="testing">
       <Header />
       <Search />
+      <UserInfo />
     </div>
   );
 }

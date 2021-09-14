@@ -1,0 +1,96 @@
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: $secondaryColor;
+    border-radius: 10px;
+
+    & > .userInfo__header {
+        display: flex;
+        padding: 20px;
+
+        & > .userInfo__header__avatar {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            margin-right: 20px;
+            border-radius: 50%;
+    
+            & > img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        & > .userInfo__header__desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+           & > .userInfo__header__desc__title {
+               font-size: 1.5rem;
+               color: $fontColor;
+           }
+
+           & > .userInfo__header__desc__account {
+               color: $foreground;
+               text-decoration: none;
+           }
+
+           & > .userInfo__header__desc__date {
+               color: $fontColor;
+           }
+        }
+    }
+
+    & > .userInfo__infos {
+        padding: 20px;
+
+        & > .userInfo__infos__desc {
+            color: $fontColor;
+            line-height: 2rem;
+        }
+
+        & > .userInfo__infos__reposAndFollowers {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: $primaryColor;
+            border-radius: 10px;
+
+            & > .userInfo__infos__reposAndFollowers__stats {
+                text-align: center;
+
+                & > .userInfo__infos__reposAndFollowers__stats__title {
+                    font-size: 1rem;
+                    color: $fontColor;
+                    margin-bottom: 20px;
+                    opacity: 0.5;
+                }
+
+                & > .userInfo__infos__reposAndFollowers__stats__text {
+                    color: $fontColor;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .userInfo__address {
+        padding: 20px;
+
+        & > .userInfo__address__info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            & > .userInfo__address__info__desc {
+                margin-left: 20px;
+                color: $fontColor;
+                word-break: break-all;
+            }
+        }
+    }
+
+}

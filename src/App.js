@@ -5,7 +5,7 @@ import './app.scss';
 
 function App() {
   return (
-    <div className="testing">
+    <div className="mainContainer">
       <Header />
       <Search />
       <UserInfo />

@@ -6,3 +6,16 @@
 @import "./components/Header/styles";
 @import "./components/Search/styles";
 @import "./components/UserInfo/styles";
+
+//.mainContainer
+.mainContainer {
+
+    @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 900px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+}

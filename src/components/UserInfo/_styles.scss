@@ -5,9 +5,15 @@
     background-color: $secondaryColor;
     border-radius: 10px;
 
+    //header
+
     & > .userInfo__header {
         display: flex;
         padding: 20px;
+
+        @media screen and (min-width: 800px) {
+            padding: 40px 40px 0 40px;
+        }
 
         & > .userInfo__header__avatar {
             width: 80px;
@@ -15,10 +21,34 @@
             overflow: hidden;
             margin-right: 20px;
             border-radius: 50%;
+
+            @media screen and (min-width: 600px) {
+                width: 100px;
+                height: 100px;
+            }
+
+            @media screen and (min-width: 800px) {
+                width: 120px;
+                height: 120px;
+            }
+
+            @media screen and (min-width: 900px) {
+                margin-right: 40px;
+            }
     
             & > img {
                 width: 80px;
                 height: 80px;
+
+                @media screen and (min-width: 600px) {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                @media screen and (min-width: 800px) {
+                    width: 120px;
+                    height: 120px;
+                }
             }
         }
 
@@ -27,9 +57,21 @@
             flex-direction: column;
             justify-content: space-between;
 
+            @media screen and (min-width: 800px) {
+                flex: 1;
+                height: 80px;
+                justify-content: flex-start;
+                align-items: space-between;
+                flex-wrap: wrap;
+            }
+
            & > .userInfo__header__desc__title {
                font-size: 1.5rem;
                color: $fontColor;
+
+               @media screen and (min-width: 800px) {
+                   margin-bottom: 5px;
+               }
            }
 
            & > .userInfo__header__desc__account {
@@ -39,12 +81,27 @@
 
            & > .userInfo__header__desc__date {
                color: $fontColor;
+
+               @media screen and (min-width: 800px) {
+                   text-align: right;
+               }
            }
         }
     }
 
+    //infos
+
     & > .userInfo__infos {
         padding: 20px;
+
+        @media screen and (min-width: 800px) {
+            padding: 0 40px 40px 180px;
+            margin-top: -40px;
+        }
+
+        @media screen and (min-width: 900px) {
+            padding: 0 40px 40px 200px;
+        }
 
         & > .userInfo__infos__desc {
             color: $fontColor;
@@ -59,31 +116,67 @@
             background-color: $primaryColor;
             border-radius: 10px;
 
+            @media screen and (min-width: 600px) {
+                justify-content: space-between;
+            }
+
             & > .userInfo__infos__reposAndFollowers__stats {
                 text-align: center;
+
+                @media screen and (min-width: 600px) {
+                    text-align: left;
+                }
 
                 & > .userInfo__infos__reposAndFollowers__stats__title {
                     font-size: 1rem;
                     color: $fontColor;
                     margin-bottom: 20px;
                     opacity: 0.5;
+
+                    @media screen and (min-width: 600px) {
+                        margin-bottom: 0;
+                    }
                 }
 
                 & > .userInfo__infos__reposAndFollowers__stats__text {
                     color: $fontColor;
                     font-weight: bold;
+
+                    @media screen and (min-width: 600px) {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
     }
 
+    //address
+
     .userInfo__address {
         padding: 20px;
+
+        @media screen and (min-width: 700px) {
+            display: flex;
+            gap: 0 4%;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 800px) {
+            padding: 0 40px 40px 180px;
+        }
+
+        @media screen and (min-width: 900px) {
+            padding: 0 40px 40px 200px;
+        }
 
         & > .userInfo__address__info {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+
+            @media screen and (min-width: 700px) {
+                width: 48%;
+            }
 
             & > .userInfo__address__info__desc {
                 margin-left: 20px;

@@ -1,3 +1,8 @@
+.userInfo__errorMessage {
+    color: $fontColor;
+    padding: 20px;
+}
+
 .userInfo {
     display: flex;
     flex-direction: column;
@@ -106,6 +111,10 @@
         & > .userInfo__infos__desc {
             color: $fontColor;
             line-height: 2rem;
+
+            & > .userInfo__infos__desc__bio--empty {
+                opacity: 0.5;
+            }
         }
 
         & > .userInfo__infos__reposAndFollowers {
@@ -178,10 +187,15 @@
                 width: 48%;
             }
 
-            & > .userInfo__address__info__desc {
+            & > .userInfo__address__info__desc, 
+            & > .userInfo__address__info__desc--empty {
                 margin-left: 20px;
                 color: $fontColor;
                 word-break: break-all;
+            }
+
+            & > .userInfo__address__info__desc--empty {
+                opacity: 0.5;
             }
         }
     }
